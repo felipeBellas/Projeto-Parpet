@@ -1,0 +1,134 @@
+  body{
+    background:black;
+  }
+    .Top{
+        justify-content: center;
+        background:linear-gradient(to right, black, rgb(23, 92, 94), rgb(18, 77, 9)) ;
+        background-size: 300% 300%;
+        margin: auto;
+        padding: 1px;
+        animation: top 10s infinite ease-in-out;
+        font-family: Impact;
+        width: 800px;
+        height: 960px;
+        border-radius: 20px;
+        min-width: 20px;
+        max-width: 800px;
+       
+    }
+    @keyframes top {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+  
+    .Botao {
+        background: rgba(1, 227, 114, 0.974);
+        font: size smaller;
+        text-align:center;
+        text-align: 0px ;
+        border-radius: 200%;
+        border-top-color: aqua ;
+        cursor: pointers;
+        z-index: 1;
+        animation: efeito 1.3s ease infinite;
+        transition: 1s ease;
+        border-left: 30px;
+        
+
+
+    }
+    .ciclo{
+        animation: rotate 5s infinite linear ;
+    }
+    .cciclo{
+        animation: counterrotate 5s infinite linear;
+    }
+
+    @keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    90%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        
+    }
+
+}
+.botao-1{
+    background-color: rgb(4, 148, 91);
+    font-size: 30% ;
+}
+ 
+.botao-1:hover{
+    animation: bounce 3s;
+    
+  
+}
+.botao-2{
+    background-color: rgb(5, 170, 104);
+    font-size: 30%;
+}
+ 
+.botao-2:hover{
+    animation: bounce 3s;
+    
+}
+.botao-3{
+    background-color: rgb(6, 190, 117);
+    font-size: 30%;
+}
+ 
+.botao-3:hover{
+    animation: bounce 3s;
+}
+.botao-4 {
+    background-color:rgb(6, 243, 148);
+    font-size: 30% ;
+}
+ 
+.botao-4:hover{
+    animation: bounce  3s;
+  
+}
+
+
+
+
+@keyframes rotate{
+0%{
+    transform: rotate(0deg);
+    
+    
+}
+100%{
+    transform: rotate(360deg);
+  
+   
+}
+}
+@keyframes counterrotate{
+    0%{
+        transform: rotate(360deg);
+        
+        
+    }
+    100%{
+        transform: rotate(-0deg);
+      
+       
+    }
+    }
+
